@@ -1,4 +1,4 @@
-let numerosImpares = [5, 3, 2, 8, 1, 4, 0];
+let numerosImpares = [5, 3, 2, 8, 1, 4, 0, 23];
 
 function ordenar(listaNumeros){
 		listaFinal= listaNumeros;
@@ -10,7 +10,7 @@ function ordenar(listaNumeros){
         }
     }
 
-    listaAux.sort();
+    listaAux.sort(function(a,b){return a-b});
     let contador = 0;
     for(let j=0; j<listaNumeros.length;j++){
         if(listaNumeros[j]%2 != 0){
